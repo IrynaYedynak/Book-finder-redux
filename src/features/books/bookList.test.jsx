@@ -24,7 +24,7 @@ function renderWithStore(preloadedState) {
     describe('BooksList component', () => {
     it('renders loading state', () => {
         renderWithStore({ items: [], status: 'loading', error: null });
-        expect(screen.getByText(/loading books/i)).toBeInTheDocument();
+        expect(screen.getByText(/loading books/i)).toBeInTheDocument(); //шукає цей текст → перевіряємо, що він є в DOM
     });
 
     it('renders error state', () => {
